@@ -9,7 +9,7 @@ package Comptess;
  * @author DELL
  */
 public class CompteEpargne extends Compte{
-    private double tauxInteret;
+    private double tauxInteret = 0.06;
     
     public CompteEpargne(double tauxInteret){
         super();
@@ -23,5 +23,10 @@ public class CompteEpargne extends Compte{
     
     public void calculerInteret() {
         solde += solde * tauxInteret /100;
+    }
+
+    @Override
+    public String toString(){
+        return "Le compte [ code = "+ code + ", solde = "+solde+" , taux d'intérêt = "+tauxInteret+"]";
     }
 }
