@@ -1,5 +1,6 @@
 package com.example.comptes;
 import java.util.List;
+import java.util.ArrayList;
 
 // La classe Client représente un client qui peut posséder plusieurs comptes
 public class Client {
@@ -17,7 +18,7 @@ public Client(int id, String nom, String prenom) {
     this.id = id;
     this.nom = nom;
     this.prenom = prenom;
-    this.comptes = new import java.util.ArrayList;<>();
+    this.comptes = new ArrayList<>();
 }
 
 // Méthode pour obtenir l'identifiant du client
