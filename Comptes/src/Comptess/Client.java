@@ -9,5 +9,5 @@ package Comptess;
  * @author DELL
  */
 public class Client {
-    
+
 }

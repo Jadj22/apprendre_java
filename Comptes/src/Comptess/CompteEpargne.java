@@ -8,6 +8,20 @@ package Comptess;
  *
  * @author DELL
  */
-public class CompteEpargne {
+public class CompteEpargne extends Compte{
+    private double tauxInteret;
     
+    public CompteEpargne(double tauxInteret){
+        super();
+        this.tauxInteret = tauxInteret;
+    }
+    
+    public CompteEpargne(double soldeInitial, double tauxInteret){
+        super(soldeInitial);
+        this.tauxInteret = tauxInteret;
+    }
+    
+    public void calculerInteret() {
+        solde += solde * tauxInteret /100;
+    }
 }
